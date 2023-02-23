@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.WebApp", "src\UrlShortener.WebApp\UrlShortener.WebApp.csproj", "{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FE322C42-1001-42D6-9E55-B2DE3C702017}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0F559DEC-09C8-4B7E-9209-753A3A300E54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.WebApp", "UrlShortener.WebApp", "{1A423DBF-C18A-4DA3-9A6B-20E8098FDF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.WebApp.UnitTests", "tests\UrlShortener.WebApp.UnitTests\UrlShortener.WebApp.UnitTests.csproj", "{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BED1D33-2BEB-4C95-88E1-CDD0FC77050F} = {FE322C42-1001-42D6-9E55-B2DE3C702017}
+		{1A423DBF-C18A-4DA3-9A6B-20E8098FDF41} = {0F559DEC-09C8-4B7E-9209-753A3A300E54}
+		{E9F0EAA1-B08A-4FC7-99B5-71477F2D1E6A} = {1A423DBF-C18A-4DA3-9A6B-20E8098FDF41}
+	EndGlobalSection
+EndGlobal

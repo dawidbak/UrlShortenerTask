@@ -1,0 +1,26 @@
+@model UrlShortener.WebApp.Features.ShortenedUrl.ShortenedUrlDto;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Url Shortener App</h1>
+    <form asp-controller="ShortenedUrl" asp-action="Add">
+        <div class="mb-3">
+            <label class="form-label">Your long link</label>
+            <input class="form-control" name="Url" value="@Model.OriginalUrl">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Generated short link</label>
+            <input class="form-control" readonly="readonly" value="@Model.ShortUrl">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<br/>
+<div class="text-center">
+    <a asp-controller="ShortenedUrl" asp-action="GetAll">
+        <button class="btn-lg btn-primary">Shortened Urls</button>
+    </a>
+</div>

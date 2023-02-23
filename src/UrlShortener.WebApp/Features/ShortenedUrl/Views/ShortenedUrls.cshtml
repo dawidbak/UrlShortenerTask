@@ -1,0 +1,23 @@
+﻿@model UrlShortener.WebApp.Features.ShortenedUrl.DTO.ShortenedUrlListDto
+
+@{
+    Layout = "_Layout";
+}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Original url</th>
+        <th scope="col">Short url</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var shortenedUrl in Model.ShortenedUrls)
+    {
+        <tr>
+            <td>@shortenedUrl.OriginalUrl</td>
+            <td>@shortenedUrl.ShortUrl</td>
+        </tr>
+    }
+    </tbody>
+</table>
