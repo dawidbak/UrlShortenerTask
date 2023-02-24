@@ -21,4 +21,6 @@ I followed the MVC path as it was originally in the task repository and arranged
 
 - Redirect to the original link - when you enter a generated link, e.g. http://localhost:5023/abc123, you will be redirected to a specific saved original link.
 
-Basic unit tests have also been written to test the operation of the handlers
+Basic unit tests have also been written to test the operation of the handlers.
+
+As for the UI site, it has been designed as simply as possible, so there are, for example, no notifications if an exception occurs.
