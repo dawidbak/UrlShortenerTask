@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using UrlShortener.WebApp.Features.ShortenedUrl.DTO;
 
 namespace UrlShortener.WebApp.Features.ShortenedUrl;
 

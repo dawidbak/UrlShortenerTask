@@ -1,4 +1,3 @@
-using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using UrlShortener.WebApp.Exceptions;
@@ -7,16 +6,6 @@ using UrlShortener.WebApp.Infrastructure;
 namespace UrlShortener.WebApp.Features.ShortenedUrl;
 
 public record GetOriginalUrl(string Url) : IRequest<string>;
-
-internal class GetOriginalUrlValidator : AbstractValidator<GetOriginalUrl>
-{
-    public GetOriginalUrlValidator()
-    {
-        RuleFor(x => x.Url)
-            .NotEmpty()
-            .WithMessage("Url is required");
-    }
-}
 
 public class GetOriginalUrlHandler : IRequestHandler<GetOriginalUrl, string>
 {

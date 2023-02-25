@@ -50,7 +50,7 @@ public class AddShortenedUrlHandler : IRequestHandler<AddShortenedUrl, Shortened
         var newShortenedUrl = new Entities.ShortenedUrl
         {
             OriginalUrl = request.Url,
-            ShortUrl = GenerateShortUrl()
+            ShortUrl = GenerateShortId()
         };
 
         _dbContext.ShortenedUrls.Add(newShortenedUrl);
@@ -62,7 +62,7 @@ public class AddShortenedUrlHandler : IRequestHandler<AddShortenedUrl, Shortened
         };
     }
 
-    private string GenerateShortUrl()
+    private string GenerateShortId()
     {
         var random = new Random();
         var poolBuilder = new StringBuilder($"{Constants.Characters.BigChars}{Constants.Characters.SmallChars}");

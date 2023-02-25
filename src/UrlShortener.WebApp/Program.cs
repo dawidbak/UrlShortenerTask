@@ -20,7 +20,6 @@ builder.Services.AddControllersWithViews();
 
 // fluent validation
 builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 // In-Memory database
